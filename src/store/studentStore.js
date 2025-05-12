@@ -13,7 +13,7 @@ const useStudentStore = create((set, get) => ({
     set({ loading: true, error: null });
     try {
       const response = await studentService.getAllStudents();
-
+        console.log(response);
       if (response.success) {
         set({ students: response.data, loading: false });
       } else {

@@ -9,7 +9,7 @@ const StudentList = () => {
   useEffect(() => {
     fetchStudents();
   }, []);
-
+  console.log(students);
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
 

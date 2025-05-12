@@ -14,6 +14,7 @@ import '../style/StudentPage.css';
 
   useEffect(() => {
     fetchStudents();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
  
   if (loading) return <div>Loading...</div>;

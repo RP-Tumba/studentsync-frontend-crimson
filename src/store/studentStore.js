@@ -49,9 +49,9 @@ const useStudentStore = create((set, get) => ({
   },
 
   searchStudents: async (query) => {
-    set({loading: true, error: null})
+    set({ loading: true, error: null });
     // Implementation goes here
-  }
+  },
 }));
 
 export default useStudentStore;

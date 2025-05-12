@@ -28,7 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-family: inter;
+  font-family: poppins;
 }
 
 h1 {
@@ -68,29 +68,42 @@ button:focus-visible {
   }
 }
 
-.welcome{
+.welcome {
   width: 185.33px;
   height: 74.13px;
   position: relative;
   top: 10px;
   left: 104px;
-  
 }
-.welcome p{
+.welcome p {
   font-size: 10px;
   opacity: 0.7;
 }
-.search{
+.search {
   position: relative;
-  width: 250px;
-  height: 50px;
-  left: 990px;
+  width: 220px;
+  height: 30px;
+  left: 1020px;
   top: -60px;
   border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  text-align: center;
+  background: #ffffff;
+  margin-bottom: 10px;
 }
-.search input{
-  width: 100%;
+.search input {
+  width: 60%;
   height: 30px;
-  border: none;
+  margin-left: 20px;
   border-radius: 3px;
+  background: transparent;
+  border: none;
+}
+.search input::placeholder {
+  font-weight: none;
+  opacity: 0.5;
+  color: rgb(6, 71, 47);
+  font-family: Poppins;
 }

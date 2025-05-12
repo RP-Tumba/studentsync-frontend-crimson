@@ -1,4 +1,5 @@
 import SearchIcon from "@mui/icons-material/Search";
+
 const Navbar = () => {
   const currentDate = new Date();
 

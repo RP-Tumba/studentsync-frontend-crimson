@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.newStudentForm{
+  width: 75vh;
+  background-color:white;
+  
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1cm;
+  margin-left:35% ;
+  border-radius: 20px;
+  padding-bottom: 20px;
+ 
+
+}
+.photh3{
+    display: flex;
+   justify-content: center;
+    padding-top: 0.8cm;
+    gap: 0.2cm;
+}
+.logotitle{
+    background-color: #f1f7df;
+    border-top-left-radius:20px ;
+     border-top-right-radius:20px ;
+    padding-bottom: 1cm;
+}
+.dateofbirth input{
+
+  width: 89%;
+}
+.firstfour{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 0.2cm;
+  border: none;
+}
+.last3 input{
+width: 97%;
+  
+}
+form input{
+  padding: 0.2em;
+ 
+  outline: none;
+  margin-bottom:1em ;
+}
+form{
+  margin-top:0.5cm;
+  
+}
+.logtitle{
+  background-color: #c3d68d;
+ padding: 2em;
+
+
+}
+.allinput{
+  margin-top: 0.3cm;
+  padding: 2em;
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0.4cm;
+
+}
+.but1{
+    
+    background-color: #88d234;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 0.5em;
+    width: 35%;
+    border-radius: 5px;
+   
+}
+.but2{
+    
+    background-color:white;
+    border: none;
+    color: #88d234;
+    font-weight: bold;
+    padding: 0.5em 0.5em;
+    width: 35%;
+    border-radius: 5px;
+    border: 2px solid #88d234;
+   
+}
+.allbut{
+ display: flex;
+ justify-content: center;
+}

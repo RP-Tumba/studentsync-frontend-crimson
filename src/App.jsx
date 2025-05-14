@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import StudentList from "./pages/StudentList";
+import Appp from "./pages/mobile.jsx"
+
 import "./App.css";
 
 const App = () => {
@@ -14,8 +16,9 @@ const App = () => {
           </Routes>
         </main>
       </div>
+      
     </Router>
   );
 };
 
-export default App;
+export default Appp;

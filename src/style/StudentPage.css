@@ -1,4 +1,4 @@
-/* General Reset */
+General Reset
 *{
   margin: 0;
   padding: 0;
@@ -20,6 +20,12 @@ body, html {
   background: green;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+.page-wrapper{
+  margin-top: 20px;
+ position: relative;
+ 
+
+}
 
 .logo {
   font-weight: bold;
@@ -38,7 +44,7 @@ body, html {
   padding: 4px 12px;
   border-radius: 4px;
   color: #28a745;
-}
+} 
 
 /* Main Content */
 .main-content {
@@ -137,7 +143,7 @@ body, html {
   background: #28a745;
   color: white;
   border-color: #28a745;
-}
+} */
 
 /* Footer */
 .footer {
@@ -158,4 +164,4 @@ body, html {
 .social-icons {
   font-size: 18px;
   margin-top: 10px;
-}
+} 

@@ -1,0 +1,22 @@
+.gallery-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Optional: control image height if needed */
+.gallery-grid img {
+  object-fit: cover;
+  height: 200px;
+}

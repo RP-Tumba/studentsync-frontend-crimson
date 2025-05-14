@@ -131,7 +131,7 @@ export const studentService = {
         .insert([snakeCaseData])
         .select();
       if (error) throw error;
-      // Transform back to camelCase for frontend
+      // Transform back to camelCase for frontends
       const transformedData = objectToCamelCase(data[0]);
       return {
         success: true,

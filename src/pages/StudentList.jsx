@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 import profilePicture from '../images/students12.jpg';
 import useStudentStore from "../store/studentStore";
 import '../style/StudentPage.css';
+import '../index.css'
 import DeleteIcon from '@mui/icons-material/Delete';
+import Footer from '../components/responsiveness/Footer'
+import GallerySection from '../components/responsiveness/GallerySection'
+import PracticeSkillsSection  from '../components/responsiveness/PracticeSkillsSection'
 
 const StudentList = () => {
   const { students, fetchStudents, loading, error } = useStudentStore();
+
   const [search, setSearch] = useState('');
 
   useEffect(() => {
@@ -62,21 +67,10 @@ const StudentList = () => {
             ))}
           </div>
         </main>
-      </div>
-
-      <footer className="footer">
-        <div className="footer-left">
-          <h3>STUDENTSYNC MANAGEMENT APP</h3>
-          <p>Student management platform</p>
-          <p>Gasabo District, Kigali, Rwanda</p>
-          <p>Working Hours: Mon - Fri (08:00 - 17:00)</p>
-        </div>
-        <div className="footer-right">
-          <p>Contact: info@akaperception.rw</p>
-          <p>Phone: 0788-322-223</p>
-          <div className="social-icons"></div>
-        </div>
-      </footer>
+      </div> <br />
+      <GallerySection /> <br />
+      <PracticeSkillsSection />
+      <Footer />
     </>
   );
 };

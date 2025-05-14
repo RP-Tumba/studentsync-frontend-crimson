@@ -14,7 +14,7 @@ body {
     -apple-system,
     BlinkMacSystemFont,
     sans-serif;
-  background-color: #f8f7fd;
+  background-color: #fff;
   color: #2d2d2d;
   justify-content: center;
 }
@@ -36,16 +36,6 @@ body {
 }
 
 
-.navbar {
-  background-color: #ffffff;
-  width: 100vw;
-  /* box-shadow: 0 4px 6px rgba(107, 70, 193, 0.06); */
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  /* border-bottom: 1px solid rgba(107, 70, 193, 0.1); */
-}
 
 .nav-content {
   max-width: 1200px;

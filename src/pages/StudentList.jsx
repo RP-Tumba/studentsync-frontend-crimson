@@ -9,7 +9,7 @@ import GallerySection from '../components/responsiveness/GallerySection'
 import PracticeSkillsSection  from '../components/responsiveness/PracticeSkillsSection'
 
 const StudentList = () => {
-  const { students, fetchStudents, loading, error } = useStudentStore();
+  const { students, fetchStudents,deleteStudent, loading, error } = useStudentStore();
 
   const [search, setSearch] = useState('');
 
@@ -17,6 +17,15 @@ const StudentList = () => {
     fetchStudents();
   }, []);
  
+   const handleDelete = async (id) => {
+    const confirm = window.confirm('Are you sure you want to delete this student?');
+    if (!confirm) return;
+
+    const result = await deleteStudent(id);
+    if (!result.success) {
+      alert(result.message);
+    }
+  };
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
 
@@ -58,7 +67,7 @@ const StudentList = () => {
                   <td>{user.studentId || '—'}</td>
                   <td>{user.enrollmentDate || '—'}</td>
                   <td className="status">Enrolled</td>
-                  <td><button className="delete-button">  <DeleteIcon /></button></td>
+                  <td><button className="delete-button"  onClick={() => handleDelete(user.studentId)}>  <DeleteIcon /></button></td>
                 </tr>
               ))}
             </tbody>

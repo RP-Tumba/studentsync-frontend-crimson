@@ -21,6 +21,7 @@ const App = () => {
         </main> 
       </div>
     </Router>
+ 
     
   );
 };

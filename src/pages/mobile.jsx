@@ -27,10 +27,10 @@ export default function Appp() {
 
       {/* Image Section */}
       <section>
-        <img src="/main.jpg" alt="Main" />
-        <img src="/img1.jpg" alt="1" />
-        <img src="/img2.jpg" alt="2" />
-        <img src="/img3.jpg" alt="3" />
+        <img src="/p1.png" alt="Main" />
+        <img src="/p2.png" alt="1" />
+        <img src="/" alt="2" />
+        <img src="/" alt="3" />
       </section>
 
       {/* Culture Section */}

@@ -1,128 +1,163 @@
-*{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.newStudentForm{
-  width: 75vh;
-  background-color:white;
-  
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 1cm;
-  margin-left:35% ;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.newStudentForm {
+  width: 100%;
+  max-width: 550px;
+  background-color: white;
   border-radius: 20px;
-  padding-bottom: 20px;
- 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
+.logotitle {
+  background-color: #f1f7df;
+  padding: 1.5rem;
+  text-align: center;
 }
-.photh3{
-    display: flex;
-   justify-content: center;
-    padding-top: 0.8cm;
-    gap: 0.2cm;
-}
-.logotitle{
-    background-color: #f1f7df;
-    border-top-left-radius:20px ;
-     border-top-right-radius:20px ;
-    padding-bottom: 1cm;
-}
-.dateofbirth input{
 
-  width: 89%;
+.photh3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
-.firstfour{
+
+.photh3 img {
+  height: 40px;
+}
+
+.photh3 h3 {
+  font-size: 1.2rem;
+  color: #1c4b00;
+}
+
+.title {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1c4b00;
+}
+
+.allinput {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.firstfour {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 0.2cm;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.firstfour > div,
+.last3 > div {
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.last3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.allbut {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.but1,
+.but2 {
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  border-radius: 6px;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.but1 {
+  background-color: #88d234;
+  color: white;
   border: none;
 }
-.last3 input{
-  width: 96%;
 
-  
-}
-form input{
-  padding: 0.2em;
- 
-  outline: none;
-  margin-bottom:1em ;
-}
-form{
-  margin-top:0.5cm;
-  
-}
-.logtitle{
-  background-color: #c3d68d;
- padding: 2em;
-
-
-}
-.allinput{
-  margin-top: 0.3cm;
-  padding: 2em;
-}
-.title{
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: 0.4cm;
-
-}
-.but1{
-    
-    background-color: #88d234;
-    border: none;
-    color: white;
-    font-weight: bold;
-    padding: 0.5em 0.5em;
-    width: 35%;
-    border-radius: 5px;
-   
-}
-.but2{
-    
-    background-color:white;
-    border: none;
-    color: #88d234;
-    font-weight: bold;
-    padding: 0.5em 0.5em;
-    width: 35%;
-    border-radius: 5px;
-    border: 2px solid #88d234;
-   
-}
-.allbut{
- display: flex;
- justify-content: center;
+.but1:hover {
+  background-color: #6ab125;
 }
 
-@media (max-width:600px){
+.but2 {
+  background-color: white;
+  color: #88d234;
+  border: 2px solid #88d234;
+}
 
-  .firstfour{
+.but2:hover {
+  background-color: #f1f7df;
+}
+
+@media (max-width: 600px) {
+  .firstfour {
     grid-template-columns: 1fr;
   }
-.but1,
-.but2{
-  width: 100%;
 
+  .allbut {
+    flex-direction: column;
+  }
+
+  .but1,
+  .but2 {
+    width: 100%;
+  }
+
+  .allinput {
+    padding: 1rem;
+  }
+
+  .photh3 img {
+    height: 30px;
+  }
+
+  .photh3 h3 {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
 }
-
-.newStudentForm{
-  width: 40vh;
-  background-color:white;
-  
- 
-  justify-content: space-around;
-  margin-top: 1cm;
-
-  border-radius: 20px;
-  padding-bottom: 20px;
- 
-
-}
-
-  
-}
-  

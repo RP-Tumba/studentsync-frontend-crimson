@@ -39,7 +39,8 @@
   border: none;
 }
 .last3 input{
-width: 97%;
+  width: 97%;
+
   
 }
 form input{
@@ -96,3 +97,32 @@ form{
  display: flex;
  justify-content: center;
 }
+
+@media (max-width:600px){
+
+  .firstfour{
+    grid-template-columns: 1fr;
+  }
+.but1,
+.but2{
+  width: 100%;
+
+}
+
+.newStudentForm{
+  width: 40vh;
+  background-color:white;
+  
+ 
+  justify-content: space-around;
+  margin-top: 1cm;
+
+  border-radius: 20px;
+  padding-bottom: 20px;
+ 
+
+}
+
+  
+}
+  

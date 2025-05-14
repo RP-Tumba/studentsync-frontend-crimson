@@ -4,6 +4,7 @@ import StudentList from "./pages/StudentList";
 import "./App.css";
 import { Form } from "./InsertNewStudent/Insert";
 
+
 const App = () => {
   return (
     <Router>
@@ -17,6 +18,7 @@ const App = () => {
         </main>
       </div> */}
       <Form/>
+    
     </Router>
 
   );

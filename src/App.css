@@ -10,12 +10,10 @@ html {
 
 body {
   font-family:
-    "Inter",
-    -apple-system,
-    BlinkMacSystemFont,
-    sans-serif;
+    "popins";
   background-color: #f8f7fd;
   color: #2d2d2d;
+  width: 100%;
 }
 
 @media (hover: none) and (pointer: coarse) {

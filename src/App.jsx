@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import StudentList from "./pages/StudentList";
 import "./App.css";
 import { HomePage } from "./pages/Home/Home";
-import { HomePage } from "./pages/Home/Home";
 import { Form } from "./InsertNewStudent/Insert";
 
 const App = () => {
@@ -16,10 +15,10 @@ const App = () => {
           
             
             <Routes>
-            <Route path="/studentsListstudentsList" element={<StudentList />} />
+            <Route path="/studentsList" element={<StudentList />} />
             <Route index element={ <HomePage />} />
            
-            <Route path="/studentsList" element={<Form />} />
+            <Route path="/newStudent" element={<Form />} />
             <Route index element={ <HomePage />} />
            
           </Routes>

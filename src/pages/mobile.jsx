@@ -2,6 +2,7 @@ import React from "react";
 import "../index.css"
 export default function Appp() {
   return (
+    <fieldset className="set">
     <div className="all">
     <div className="melo">
       {/* Header */}
@@ -10,7 +11,7 @@ export default function Appp() {
           <img src="logo.png" alt="" />
           <span className="std">STUDENTSYNC</span>
         </div>
-        <div>&#9776;</div>
+        <div className="icon">&#9776;</div>
       </header>
 
       {/* Hero Section */}
@@ -20,7 +21,7 @@ export default function Appp() {
           STUDENTSYNC <br /> MANAGEMENT WEB APP
         </h1>
         <h4>Students for the Academic Year 2025/2026</h4>
-        <div>
+        <div className="buttons">
           <button className="more">Learn More</button>
           <button className="all">All Schools</button>
         </div>
@@ -29,25 +30,28 @@ export default function Appp() {
 
       {/* Image Section */}
       <section>
-        <img src="./p1.jpg" alt="" />
-        <img src="./p2.jpg"/>
-        <img src="/" alt="" />
-        <img src="/" alt="" />
+        <div className="img">
+        <img src="p1.jpg"/>
+        <img src="p2.jpg"/>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        </div>
       </section>
 
       {/* Culture Section */}
       <section>
         <div className="vibrant">
         <p>Vibrant Culture</p>
-        <h2>The Gym College StudentSync</h2><br></br><br></br>
+        <h2>The Gym College StudentSync</h2>
         </div>
       </section>
 
       {/* Cards Section */}
       <section>
         <article>
-            <div className="digital">
-          <h3>Digital Transformation</h3><br></br>
+            <div className="cards">
+           
+          <h3>Digital Transformation</h3>
           <p>
             Digital transformation empowers students with tools and 
             skills that extend beyond technical proficiency. Students in 
@@ -57,14 +61,18 @@ export default function Appp() {
         </article>
 
         <article>
+            <div className="race">
           <h3>Race towards success</h3>
           <p>
             Competing and striving in goodness, having speed and accuracy in doing good deeds. 
             Trained to act swiftly in matters, completing tasks quickly and efficiently.
-          </p>
+          </p></div>
         </article>
       </section>
+      
     </div>
     </div>
+    
+    </fieldset>
   );
 }

@@ -5,18 +5,23 @@ import "./App.css";
 import { HomePage } from "./pages/Home/Home";
 
 const App = () => {
+  
   return (
     <Router>
       <div className="app-container">
-        <Navbar />
-        <HomePage />
-        {/* <main className="main-content">
-          <Routes>
-            <Route path="/" element={<StudentList />} />
+      {  <Navbar />}
+        <main className="main-content">
+          
+            <Routes>
+            <Route path="/studentsList" element={<StudentList />} />
+            <Route index element={ <HomePage />} />
+           
           </Routes>
-        </main> */}
+          
+        </main> 
       </div>
     </Router>
+    
   );
 };
 

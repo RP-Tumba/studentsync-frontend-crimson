@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ *{
+=======
 *{
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
   margin: 0;
   padding: 0;
 }
@@ -15,7 +19,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} 
 
 a {
   font-weight: 500;
@@ -26,13 +30,8 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+
+
 
 
 h1 {
@@ -73,4 +72,8 @@ button:focus-visible {
 }
 
 
+<<<<<<< HEAD
+ 
+=======
 
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f

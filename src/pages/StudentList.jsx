@@ -15,14 +15,17 @@ const StudentList = () => {
 
   useEffect(() => {
     fetchStudents();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
+ 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
 
-  return (
-    <>
+
+  return (<>
+    
+
+
+ 
       <div className="page-wrapper">
         <main className="main-content">
           <div className="header-section">
@@ -74,5 +77,6 @@ const StudentList = () => {
     </>
   );
 };
+
 
 export default StudentList;

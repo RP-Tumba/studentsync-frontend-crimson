@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 General Reset
+=======
+/* General Reset */
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
 *{
   margin: 0;
   padding: 0;
@@ -20,12 +24,15 @@ body, html {
   background: green;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+<<<<<<< HEAD
 .page-wrapper{
   margin-top: 20px;
  position: relative;
  
 
 }
+=======
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
 
 .logo {
   font-weight: bold;
@@ -44,7 +51,11 @@ body, html {
   padding: 4px 12px;
   border-radius: 4px;
   color: #28a745;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
 
 /* Main Content */
 .main-content {
@@ -143,7 +154,11 @@ body, html {
   background: #28a745;
   color: white;
   border-color: #28a745;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
 
 /* Footer */
 .footer {
@@ -164,4 +179,8 @@ body, html {
 .social-icons {
   font-size: 18px;
   margin-top: 10px;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f

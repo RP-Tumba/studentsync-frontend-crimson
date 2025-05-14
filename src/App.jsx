@@ -11,12 +11,15 @@ const App = () => {
   return (
     <Router>
       <div className="app-container">
-      {{  <Navbar />}}
+      {  <Navbar />}
         <main className="main-content">
           
+            
             <Routes>
-            <Route path="/studentsList" element={<StudentList />} />
-            <Route path="/newStudent" element={<Form />} />
+            <Route path="/studentsListstudentsList" element={<StudentList />} />
+            <Route index element={ <HomePage />} />
+           
+            <Route path="/studentsList" element={<Form />} />
             <Route index element={ <HomePage />} />
            
           </Routes>

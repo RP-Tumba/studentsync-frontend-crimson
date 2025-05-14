@@ -66,8 +66,8 @@ export const Form=()=>{
                <div className="allinput">
                  <div className="firstfour ">
 
-                <div className="fName"> <p>First Name</p><input type="text" name="first_name"  value={student.first_name} onChange={handleInput} required/></div>
-                 <div className="lName"> <p>Last Name</p><input type="text" name="last_name"  value={student.last_name} onChange={handleInput} required/></div>
+                <div className="Fname"> <p>First Name</p><input type="text" name="first_name"  value={student.first_name} onChange={handleInput} required/></div>
+                 <div className="Fname"> <p>Last Name</p><input type="text" name="last_name"  value={student.last_name} onChange={handleInput} required/></div>
                   <div className="dateofbirth"><p>Date of birth</p><input type="date" name="date_of_birth"  value={student.date_of_birth} onChange={handleInput} required/></div>
                   <div className="studentId"><p>Student Id</p><input type="text" name="student_id"  value={student.student_id} onChange={handleInput} required/></div>
                  </div>

@@ -8,16 +8,21 @@ export default function Appp() {
       {/* Header */}
       <header className="header">
         <div className="logo-cont">
-         <img src="./logo.png" alt="" />
-         </div>
-          <span className="std">STUDENTSYNC</span>
-        <div className="icon">&#9776;</div>
+         <img src="./logo.png" alt="" width={32}/>
+         
+         <span className="std">STUDENTSYNC</span>
+       
+          </div>
+         <div className="icon">&#9776;
+        </div>
       </header>
+      <br></br>
       <section>
         <div className="management"><p>Students management platform</p>
+        <br></br>
         <h1>
           STUDENTSYNC <br /> MANAGEMENT WEB APP
-        </h1>
+        </h1><br></br>
         <h4>Students for the Academic Year 2025/2026</h4>
         <div className="buttons">
           <button className="btn1">Learn More</button>

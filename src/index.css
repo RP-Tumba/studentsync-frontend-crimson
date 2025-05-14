@@ -12,6 +12,65 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.all{
+  margin-left: 200px;
+  
+}
+.jizere{
+  width:200px;
+}
+.melo{
+  background-color: aliceblue;
+}
+.std{
+  color: rgb(7, 146, 184);
+}
+.management p{
+  color: rgb(11, 234, 11);
+}
+.management h1{
+  color: #1c1f5a;
+  font-weight: bold;
+  font-size: 30px;
+}
+.management .more{
+  border: solid greenyellow;
+}
+.management .all{
+  margin-left: 40px;
+  background-color: greenyellow;
+}
+.management h4{
+  color: rgb(194, 128, 6);
+}
+.vibrant p{
+  color: rgb(3, 172, 3);
+  margin-left: 50px;
+}
+.vibrant h2{
+  color: #212240;
+  font-size: 20px;
+  font-weight: bold;
+}
+.digital h3{
+  color: #646cff;
+  font-size: 19px;
+  font-weight: bold;
+}
+.digital p{
+  display: grid;
+
+
+}
+
+
+
+
+
+
+
+
+
 
 a {
   font-weight: 500;

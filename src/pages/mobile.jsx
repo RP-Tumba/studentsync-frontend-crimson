@@ -1,54 +1,59 @@
 import React from "react";
-
+import "../index.css"
 export default function Appp() {
   return (
-    <div>
+    <div className="all">
+    <div className="melo">
       {/* Header */}
       <header>
         <div>
-          <img src="/logo.png" alt="StudentSync Logo" />
-          <span>STUDENTSYNC</span>
+          <img src="logo.png" alt="" />
+          <span className="std">STUDENTSYNC</span>
         </div>
         <div>&#9776;</div>
       </header>
 
       {/* Hero Section */}
       <section>
-        <p>Students management platform</p>
+        <div className="management"><p>Students management platform</p>
         <h1>
           STUDENTSYNC <br /> MANAGEMENT WEB APP
         </h1>
-        <p>Students for the Academic Year 2025/2026</p>
+        <h4>Students for the Academic Year 2025/2026</h4>
         <div>
-          <button>Learn More</button>
-          <button>All Schools</button>
+          <button className="more">Learn More</button>
+          <button className="all">All Schools</button>
+        </div>
         </div>
       </section>
 
       {/* Image Section */}
       <section>
-        <img src="/p1.png" alt="Main" />
-        <img src="/p2.png" alt="1" />
-        <img src="/" alt="2" />
-        <img src="/" alt="3" />
+        <img src="./p1.jpg" alt="" />
+        <img src="./p2.jpg"/>
+        <img src="/" alt="" />
+        <img src="/" alt="" />
       </section>
 
       {/* Culture Section */}
       <section>
+        <div className="vibrant">
         <p>Vibrant Culture</p>
-        <h2>The Gym College StudentSync</h2>
+        <h2>The Gym College StudentSync</h2><br></br><br></br>
+        </div>
       </section>
 
       {/* Cards Section */}
       <section>
         <article>
-          <h3>Digital Transformation</h3>
+            <div className="digital">
+          <h3>Digital Transformation</h3><br></br>
           <p>
             Digital transformation empowers students with tools and 
             skills that extend beyond technical proficiency. Students in 
             learning environments where ethical digital citizenship and proper online 
             conduct become the bedrock of their future success in an increasingly connected world.
-          </p>
+          </p></div>
         </article>
 
         <article>
@@ -59,6 +64,7 @@ export default function Appp() {
           </p>
         </article>
       </section>
+    </div>
     </div>
   );
 }

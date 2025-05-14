@@ -14,13 +14,33 @@
 }
 .all{
   margin-left: 200px;
+  width: 400px;
   
+}
+.logo-cont {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
 }
 .set{
   width: 200px;
   margin-left: 90px;
   border: 3px;
 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
 }
 .icon{
   margin-right: 30px;
@@ -44,7 +64,7 @@
   font-weight: bold;
   font-size: 25px;
 }
-.management .more{
+.management .btn1{
  
  
   color: #16a34a;
@@ -57,7 +77,7 @@
   
   
 }
-.management .all{
+.management .btn2{
  background-color: #16a34a;
   color: white;
   padding: 0.25rem 1rem;
@@ -74,15 +94,12 @@
   margin-top: 1.5rem;
 }
 .vibrant p{
-  /* color: rgb(3, 172, 3);
-  margin-left: 50px;
-  font-size: 15px; */
   color: #16a34a;
   font-size: 0.875rem;
   font-weight: 500;
 }
 .vibrant h2{
-  color: #212240;
+  color: #181a57;
   font-size: 20px;
   font-weight: bold;
 }
@@ -92,41 +109,50 @@
   flex-direction: column;
   gap: 1rem;
 }
-.card {
-  border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
 .buttons {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
-
-
-
-
-
-
 .digital h3{
-  color: #15173b;
-  font-size: 19px;
-  font-weight: bold;
+   color: #18194d;
+  
+   font-weight: 600;
 }
 .digital p{
-  display: grid;
-  
-  font-size: '0.875rem';
-   color: '#4b5563';
-    margin-top: '0.25rem';
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-top: 0.25rem;
 
 
 }
 .race h3{
   color: #212240;
-  font-weight: bold;
+  
+   font-weight: 600;
 }
 .race p{
+  
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-top: 0.25rem;
+}
+.img-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+}
+
+.img-grid img {
+  border-radius: 0.375rem;
+  width: 190px;
+}
+
+.main-img {
+  grid-column: span 3;
+  width: 170px;
+  height: 50px;
   display: flex;
 }
 

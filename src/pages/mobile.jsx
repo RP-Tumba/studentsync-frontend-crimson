@@ -6,15 +6,15 @@ export default function Appp() {
     <div className="all">
     <div className="melo">
       {/* Header */}
-      <header>
-        <div>
-          <img src="logo.png" alt="" />
+      <header className="header">
+        <div className="logo-cont">
+         <img src="./logo.png" alt="" />
+          
           <span className="std">STUDENTSYNC</span>
+          
         </div>
         <div className="icon">&#9776;</div>
       </header>
-
-      {/* Hero Section */}
       <section>
         <div className="management"><p>Students management platform</p>
         <h1>
@@ -22,19 +22,23 @@ export default function Appp() {
         </h1>
         <h4>Students for the Academic Year 2025/2026</h4>
         <div className="buttons">
-          <button className="more">Learn More</button>
-          <button className="all">All Schools</button>
+          <button className="btn1">Learn More</button>
+          <button className="btn2">All Schools</button>
         </div>
         </div>
       </section>
 
       {/* Image Section */}
       <section>
-        <div className="img">
-        <img src="p1.jpg"/>
-        <img src="p2.jpg"/>
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <div className="img-grid">
+          <div className="img-grid">
+        <img src="./p1.jpg"/>
+        </div>
+        <div className="main-img">
+        <img src="./p2.jpg"/>
+        <img src="./p3.jpg" alt="" />
+        <img src="./p4.jpg" alt="" />
+        </div>
         </div>
       </section>
 
@@ -49,8 +53,8 @@ export default function Appp() {
       {/* Cards Section */}
       <section>
         <article>
-            <div className="cards">
-           
+            
+           <div className="digital">
           <h3>Digital Transformation</h3>
           <p>
             Digital transformation empowers students with tools and 
@@ -58,7 +62,7 @@ export default function Appp() {
             learning environments where ethical digital citizenship and proper online 
             conduct become the bedrock of their future success in an increasingly connected world.
           </p></div>
-        </article>
+        </article><br></br>
 
         <article>
             <div className="race">

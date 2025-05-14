@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
+
  *{
-=======
-*{
->>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
   margin: 0;
   padding: 0;
 }
@@ -69,11 +67,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
+} 

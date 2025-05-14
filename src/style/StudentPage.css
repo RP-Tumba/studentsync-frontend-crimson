@@ -1,0 +1,186 @@
+<<<<<<< HEAD
+General Reset
+=======
+/* General Reset */
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f9f9f9;
+  justify-content: center;
+ 
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: green;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+<<<<<<< HEAD
+.page-wrapper{
+  margin-top: 20px;
+ position: relative;
+ 
+
+}
+=======
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
+
+.logo {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.nav-links .active {
+  border: 1px solid #28a745;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: #28a745;
+<<<<<<< HEAD
+} 
+=======
+}
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
+
+/* Main Content */
+.main-content {
+  padding: 32px;
+  background: white;
+  margin: 24px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 10px rgba(0,0,0,0.05); */
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-section h1 {
+  color: #28a745;
+  font-size: 24px;
+}
+
+.add-button {
+  background: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.student-table th {
+  background: #e6f4ea;
+  text-align: left;
+}
+
+.student-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.status {
+  color: green;
+  font-weight: bold;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-button.active {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+<<<<<<< HEAD
+} */
+=======
+}
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 24px 32px;
+  font-size: 14px;
+  
+
+}
+
+.footer-left h3 {
+  margin-bottom: 4px;
+  color: #28a745;
+}
+
+.social-icons {
+  font-size: 18px;
+  margin-top: 10px;
+<<<<<<< HEAD
+} 
+=======
+}
+>>>>>>> 5c5c0dc82a7c5520ed5251727f640836cb35936f

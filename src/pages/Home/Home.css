@@ -1,0 +1,215 @@
+.home .topDiv {
+    display: flex;
+    justify-content: space-around;
+    width: 98%;
+    padding: 4% 7%;
+}
+
+.home .topDiv img{
+    width: 200px;
+    height: 60px;
+}
+
+.home .topDiv .left{
+    overflow: hidden;
+    width: 60%;
+    margin-top: 30px;
+}
+.home .topDiv .imagesDiv{
+    width: 40%;
+}
+.home .topDiv .imagesDiv .topImage{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.home .topDiv .imagesDiv  .images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.home .topDiv .imagesDiv .images img{
+    width: 32%;
+    border-radius: 5px;
+    height: 100px;
+}
+.home .topDiv .left {
+    line-height: 1cm;
+}
+
+.home .topDiv .left h4{
+    color: rgb(137, 194, 5);
+}
+.home .topDiv .left h1{
+    color: rgb(1, 73, 1);
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1cm;
+}
+
+
+.home .topDiv .left p{
+    color: rgb(224, 146, 2);
+    color: 12px;
+    margin: 2% 0;
+}
+
+.home .topDiv .left .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+}
+.home .topDiv .left .buttons button{
+    font-size: 13px;
+}
+.home .topDiv .left .buttons button:first-child{
+    background-color: transparent;
+    color: rgb(91, 170, 1);
+    border:1px solid rgb(120, 223, 2);
+    text-transform: capitalize;
+}
+.home .topDiv .left .buttons button:last-child{
+    background-color: rgb(95, 173, 5);
+    color: white;
+    text-transform: capitalize;
+
+}
+
+.home .secondPart .head h2,.home .secondPart .head p{
+    text-align: center;
+}
+
+.home .secondPart .cards .card .head{
+    display: flex;
+    margin: 10px 0;
+} 
+
+.home .secondPart .cards .card .head div{
+    background-color: rgba(212, 212, 212, 0.288);
+    padding:5px 5px 0 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.home .secondPart .cards .card:nth-child(odd) .head h3{
+    color: rgb(88, 88, 88);
+}
+
+.home .secondPart .cards .card:nth-child(even) p,.head h3{
+    color: rgb(218, 218, 218);
+}
+
+.home .secondPart .cards .card .head div .icon{
+    color: rgb(212, 80, 80);
+    margin-top: 3px;
+}
+
+.home .secondPart .cards {
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.home .secondPart .cards .card{
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.home .secondPart .cards .card:nth-child(even){
+    background-color: rgb(61, 48, 85);
+    color: white;
+}
+.home .secondPart .head p{
+    color: rgb(91, 170, 1);
+}
+.home .secondPart .head h2{
+    color: rgb(1, 73, 1);
+}
+
+.home .bottomPart{
+    margin-top: 4em;
+}
+.home .bottomPart .head p{
+    color: rgb(91, 170, 1);
+    text-align: center;
+    font-weight: 700;
+}
+.home .bottomPart .head h3{
+    color: rgb(1, 73, 1);
+    text-align: center;
+    font-size: 28px;
+}
+.home .bottomPart .nav{
+    width: 50%;
+    display: flex;
+    margin-left: 25%;
+    margin-top: 2em;
+    position: relative;
+    height: 5vh;
+    
+}
+.home .bottomPart .nav p{
+    padding: 0 5%;
+    text-transform: capitalize;
+}
+.home .bottomPart .nav p:first-child{
+    color: rgb(91, 170, 1);
+}
+.home .bottomLine{
+    width: 100%;
+    background-color: rgb(190, 190, 190);
+    height: 8px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.home .bottomLine p{
+    width: 15%;
+    background-color: rgb(91, 170, 1);
+    height: 8px;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+}
+.home .bottomPart .images{
+    display: grid;
+    margin-top: 2em;
+    padding: 3em 7%;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.home .bottomPart .images .image{
+    width: 95%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.home .bottomPart .images .image img{
+    width: 100%;
+    height: 100%;
+}
+.home .bottomPart .images .image p{
+    width: 100%;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding-left: 3em;
+    padding-top: 3vh;
+    transition: 0.5s ease;
+    z-index: -1;
+}
+.home .bottomPart .images .image:hover p{
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding-left: 3em;
+    padding-top: 3vh;
+    z-index: 1;
+}

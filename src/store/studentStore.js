@@ -13,7 +13,7 @@ const useStudentStore = create((set, get) => ({
     set({ loading: true, error: null });
     try {
       const response = await studentService.getAllStudents();
-
+        console.log(response);
       if (response.success) {
         set({ students: response.data, loading: false });
       } else {
@@ -34,6 +34,18 @@ const useStudentStore = create((set, get) => ({
   addStudent: async (studentData) => {
     set({ loading: true, error: null });
     // implementation goes here
+     try {
+    const response = await studentService.createStudent(studentData);
+    if (response.success) {
+      // Add new student to state
+      const InsertedStudents = [...get().students, response.data];
+      set({ students: InsertedStudents, loading: false });
+    } else {
+      set({ error: response.message, loading: false });
+    }
+  } catch (error) {
+    set({ error: error.message, loading: false });
+  }
   },
 
   // Update student
@@ -49,9 +61,9 @@ const useStudentStore = create((set, get) => ({
   },
 
   searchStudents: async (query) => {
-    set({ loading: true, error: null });
+    set({loading: true, error: null})
     // Implementation goes here
-  },
+  }
 }));
 
 export default useStudentStore;

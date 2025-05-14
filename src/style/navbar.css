@@ -1,0 +1,24 @@
+.logo{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+    gap: 10px;
+}
+.logo img{
+    height: 30px;
+    width: 30px;
+}
+.logo p{
+    font-size: 20px;
+    margin-top: 2px;
+
+}
+.nav-links{
+   
+    margin-right: 55px;
+}
+
+

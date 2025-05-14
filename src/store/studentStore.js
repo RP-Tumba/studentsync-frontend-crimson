@@ -13,7 +13,7 @@ const useStudentStore = create((set, get) => ({
     set({ loading: true, error: null });
     try {
       const response = await studentService.getAllStudents();
-
+        console.log(response);
       if (response.success) {
         set({ students: response.data, loading: false });
       } else {
@@ -49,9 +49,9 @@ const useStudentStore = create((set, get) => ({
   },
 
   searchStudents: async (query) => {
-    set({ loading: true, error: null });
+    set({loading: true, error: null})
     // Implementation goes here
-  },
+  }
 }));
 
 export default useStudentStore;

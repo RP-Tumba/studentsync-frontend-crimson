@@ -10,8 +10,8 @@ import { supabase } from "./supabase";
  * @return {string} The snake_case string
  */
 const camelToSnake = (str) => {
-  if (typeof str !== "string") return str;
-  return str.replace(/([A-Z])/g, (letter) => `_${letter.toLowerCase()}`);
+  if (typeof str !== 'string') return str;
+  return str.replace(/([A-Z])/g, letter => `_${letter.toLowerCase()}`);
 };
 
 /**
@@ -20,7 +20,7 @@ const camelToSnake = (str) => {
  * @return {string} The camelCase string
  */
 const snakeToCamel = (str) => {
-  if (typeof str !== "string") return str;
+  if (typeof str !== 'string') return str;
   return str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
 };
 
@@ -30,12 +30,12 @@ const snakeToCamel = (str) => {
  * @return {Object} A new object with camelCase keys
  */
 const objectToCamelCase = (obj) => {
-  if (obj === null || typeof obj !== "object") {
+  if (obj === null || typeof obj !== 'object') {
     return obj;
   }
 
   if (Array.isArray(obj)) {
-    return obj.map((item) => objectToCamelCase(item));
+    return obj.map(item => objectToCamelCase(item));
   }
 
   return Object.keys(obj).reduce((acc, key) => {
@@ -51,12 +51,12 @@ const objectToCamelCase = (obj) => {
  * @return {Object} A new object with snake_case keys
  */
 const objectToSnakeCase = (obj) => {
-  if (obj === null || typeof obj !== "object") {
+  if (obj === null || typeof obj !== 'object') {
     return obj;
   }
 
   if (Array.isArray(obj)) {
-    return obj.map((item) => objectToSnakeCase(item));
+    return obj.map(item => objectToSnakeCase(item));
   }
 
   return Object.keys(obj).reduce((acc, key) => {
@@ -77,23 +77,23 @@ export const studentService = {
   getAllStudents: async () => {
     try {
       const { data, error } = await supabase
-        .from("students")
-        .select("*")
-        .order("created_at", { ascending: false });
+        .from('students')
+        .select('*')
+        .order('created_at', { ascending: false });
       if (error) throw error;
       // Transform snake_case to camelCase for frontend use
-      const transformedData = data.map((student) => objectToCamelCase(student));
+      const transformedData = data.map(student => objectToCamelCase(student));
       return {
         success: true,
         count: transformedData.length,
-        data: transformedData,
+        data: transformedData
       };
     } catch (error) {
-      console.error("Error fetching students:", error);
+      console.error('Error fetching students:', error);
       return {
         success: false,
-        message: error.message || "Failed to fetch students",
-        data: [],
+        message: error.message || 'Failed to fetch students',
+        data: []
       };
     }
   },
@@ -101,22 +101,22 @@ export const studentService = {
   getStudentById: async (id) => {
     try {
       const { data, error } = await supabase
-        .from("students")
-        .select("*")
-        .eq("id", id)
+        .from('students')
+        .select('*')
+        .eq('id', id)
         .single();
       if (error) throw error;
       // Transform snake_case to camelCase
       const transformedData = objectToCamelCase(data);
       return {
         success: true,
-        data: transformedData,
+        data: transformedData
       };
     } catch (error) {
       console.error(`Error fetching student with ID ${id}:`, error);
       return {
         success: false,
-        message: error.message || `Failed to fetch student with ID ${id}`,
+        message: error.message || `Failed to fetch student with ID ${id}`
       };
     }
   },
@@ -127,7 +127,7 @@ export const studentService = {
       const snakeCaseData = objectToSnakeCase(studentData);
       console.log("Transformed data for database:", snakeCaseData);
       const { data, error } = await supabase
-        .from("students")
+        .from('students')
         .insert([snakeCaseData])
         .select();
       if (error) throw error;
@@ -136,13 +136,13 @@ export const studentService = {
       return {
         success: true,
         data: transformedData,
-        message: "Student created successfully",
+        message: 'Student created successfully'
       };
     } catch (error) {
-      console.error("Error creating student:", error);
+      console.error('Error creating student:', error);
       return {
         success: false,
-        message: error.message || "Failed to create student",
+        message: error.message || 'Failed to create student'
       };
     }
   },
@@ -152,9 +152,9 @@ export const studentService = {
       // Transform camelCase to snake_case for database
       const snakeCaseData = objectToSnakeCase(studentData);
       const { data, error } = await supabase
-        .from("students")
+        .from('students')
         .update(snakeCaseData)
-        .eq("id", id)
+        .eq('id', id)
         .select();
       if (error) throw error;
       // Transform back to camelCase for frontend
@@ -162,13 +162,13 @@ export const studentService = {
       return {
         success: true,
         data: transformedData,
-        message: "Student updated successfully",
+        message: 'Student updated successfully'
       };
     } catch (error) {
       console.error(`Error updating student with ID ${id}:`, error);
       return {
         success: false,
-        message: error.message || `Failed to update student with ID ${id}`,
+        message: error.message || `Failed to update student with ID ${id}`
       };
     }
   },
@@ -176,42 +176,41 @@ export const studentService = {
   deleteStudent: async (id) => {
     try {
       const { error } = await supabase
-        .from("students")
+        .from('students')
         .delete()
-        .eq("student_id", id);
+        .eq('student_id', id);
       if (error) throw error;
       return {
         success: true,
-        message: "Student deleted successfully",
+        message: 'Student deleted successfully'
       };
     } catch (error) {
       console.error(`Error deleting student with ID ${id}:`, error);
       return {
         success: false,
-        message: error.message || `Failed to delete student with ID ${id}`,
+        message: error.message || `Failed to delete student with ID ${id}`
       };
     }
   },
 
   searchStudents: async (query) => {
     try {
-      const { data, error } = await supabase.rpc("search_students", {
-        search_query: query,
-      });
+      const { data, error } = await supabase
+        .rpc('search_students', { search_query: query });
       if (error) throw error;
       // Transform snake_case to camelCase
-      const transformedData = data.map((student) => objectToCamelCase(student));
+      const transformedData = data.map(student => objectToCamelCase(student));
       return {
         success: true,
         count: transformedData.length,
-        data: transformedData,
+        data: transformedData
       };
     } catch (error) {
       console.error(`Error searching students with query "${query}":`, error);
       return {
         success: false,
-        message: error.message || "Failed to search students",
-        data: [],
+        message: error.message || 'Failed to search students',
+        data: []
       };
     }
   },

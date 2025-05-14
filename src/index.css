@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.all{
+.body{
   margin-left: 200px;
   width: 400px;
   
@@ -29,28 +29,34 @@
   height: 24px;
   border-radius: 9999px;
 }
-.set{
+/* .set{
   width: 200px;
-  margin-left: 90px;
+  margin-left: 20px;
   border: 3px;
 
-}
+} */
+
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 0.5rem;
+  color: rgb(11, 234, 11);
+}
+@media (max-width: 580px) {
+  .header{
+    display: block;
+  }
 }
 .icon{
   margin-right: 30px;
   margin-top: 2px;
 }
-.jizere{
-  width:200px;
-}
-.melo{
-  background-color: aliceblue;
+
+
+.student{
+  background-color: aliceblue; 
 }
 .std{
   color: rgb(7, 146, 184);

@@ -2,17 +2,15 @@ import React from "react";
 import "../index.css"
 export default function Appp() {
   return (
-    <fieldset className="set">
-    <div className="all">
-    <div className="melo">
+    // <fieldset className="set">
+    <div className="body">
+    <div className="student">
       {/* Header */}
       <header className="header">
         <div className="logo-cont">
          <img src="./logo.png" alt="" />
-          
+         </div>
           <span className="std">STUDENTSYNC</span>
-          
-        </div>
         <div className="icon">&#9776;</div>
       </header>
       <section>
@@ -77,6 +75,6 @@ export default function Appp() {
     </div>
     </div>
     
-    </fieldset>
+    // </fieldset>
   );
 }

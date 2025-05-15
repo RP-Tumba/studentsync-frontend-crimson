@@ -36,10 +36,27 @@ const useStudentStore = create((set, get) => ({
     // implementation goes here
   },
 
-  // Update student
-  updateStudent: async (id, studentData) => {
+  updateStudent: async (id, updatedData) => {
     set({ loading: true, error: null });
-    // implementation goes here
+
+    try {
+      const result = await studentService.updateStudent(id, updatedData);
+      if (result.success) {
+        set((state) => ({
+          students: state.students.map((s) =>
+            s.studentId === id ? { ...s, ...updatedData } : s,
+          ),
+          student: { ...state.student, ...updatedData }, // Update the local student data
+          loading: false,
+        }));
+      } else {
+        set({ error: result.message, loading: false });
+      }
+      return result; // Return result to the component
+    } catch (error) {
+      set({ error: error.message, loading: false });
+      return { success: false, message: error.message };
+    }
   },
 
   // Delete student

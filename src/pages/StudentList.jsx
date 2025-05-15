@@ -6,14 +6,7 @@ import "../style/StudentPage.css";
 import "../index.css";
 
 const StudentList = () => {
-  const {
-    students,
-    fetchStudents,
-    deleteStudent,
-    updateStudent,
-    loading,
-    error,
-  } = useStudentStore();
+  const { students, fetchStudents,deleteStudent, loading,updateStudent, error } = useStudentStore();
 
   const [search, setSearch] = useState("");
   const [isEditing, setIsEditing] = useState(false);
@@ -21,12 +14,10 @@ const StudentList = () => {
 
   useEffect(() => {
     fetchStudents();
-  }, [isEditing]);
-
-  const handleDelete = async (id) => {
-    const confirm = window.confirm(
-      "Are you sure you want to delete this student?",
-    );
+  }, []);
+ 
+   const handleDelete = async (id) => {
+    const confirm = window.confirm('Are you sure you want to delete this student?');
     if (!confirm) return;
 
     const result = await deleteStudent(id);
@@ -60,7 +51,7 @@ const StudentList = () => {
         <main className="main-content">
           <div className="header-section">
             <h1>All students</h1>
-            <button className="add-button">+ Add student</button>
+           <Link to = "/newStudent"> <button className="add-button">+ Add student</button></Link>
           </div>
 
           <input

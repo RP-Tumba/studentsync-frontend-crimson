@@ -72,10 +72,22 @@ const useStudentStore = create((set, get) => ({
   },
 
   // Delete student
-  deleteStudent: async (id) => {
+   deleteStudent: async (id) => {
     set({ loading: true, error: null });
-    // implementation goes here
+
+    const result = await studentService.deleteStudent(id);
+    if (result.success) {
+      set((state) => ({
+        students: state.students.filter((s) => s.studentId !== id),
+        loading: false,
+      }));
+    } else {
+      set({ error: result.message, loading: false });
+    }
+
+    return result; // Optional: useful in components
   },
+  
 
   searchStudents: async (query) => {
     set({ loading: true, error: null });

@@ -28,9 +28,20 @@ a:hover {
   color: #535bf2;
 }
 
+<<<<<<< HEAD
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: poppins;
+}
+=======
 
 
 
+>>>>>>> 52034639b1da6bc05b063703e05d161b3425fa62
 
 h1 {
   font-size: 3.2em;
@@ -67,4 +78,44 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} 
+}
+
+.welcome {
+  width: 185.33px;
+  height: 74.13px;
+  position: relative;
+  top: 10px;
+  left: 104px;
+}
+.welcome p {
+  font-size: 10px;
+  opacity: 0.7;
+}
+.search {
+  position: relative;
+  width: 220px;
+  height: 30px;
+  left: 1020px;
+  top: -60px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  text-align: center;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+.search input {
+  width: 60%;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 3px;
+  background: transparent;
+  border: none;
+}
+.search input::placeholder {
+  font-weight: none;
+  opacity: 0.5;
+  color: rgb(6, 71, 47);
+  font-family: Poppins;
+}

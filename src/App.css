@@ -10,7 +10,11 @@ html {
 
 body {
   font-family:
-    "Inter",
+    "popins";
+  background-color: #f8f7fd;
+  color: #2d2d2d;
+  width: 100%;
+    font-family: "Inter",
     -apple-system,
     BlinkMacSystemFont,
     sans-serif;

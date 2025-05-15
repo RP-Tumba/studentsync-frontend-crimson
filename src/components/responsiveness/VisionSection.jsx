@@ -1,5 +1,5 @@
-import React from 'react';
-import './VisionSection.css';
+import React from "react";
+import "./VisionSection.css";
 
 const VisionSection = () => {
   return (

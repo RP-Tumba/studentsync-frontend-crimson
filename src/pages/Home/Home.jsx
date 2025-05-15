@@ -9,6 +9,8 @@ import image7 from "./../../images/b2.jpg";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import SnoozeRoundedIcon from "@mui/icons-material/SnoozeRounded";
 import DirectionsRunRoundedIcon from "@mui/icons-material/DirectionsRunRounded";
+import { Link } from "react-router-dom";
+
 export const HomePage = () => {
   return (
     <div className="home">
@@ -21,7 +23,7 @@ export const HomePage = () => {
           <p>students for the accademic Year 2025/2026</p>
           <div className="buttons">
             <button>learn more</button>
-            <button>all students</button>
+           <Link to="/studentsList"> <button>all students</button></Link>
           </div>
         </div>
         <div className="imagesDiv">
@@ -94,7 +96,6 @@ export const HomePage = () => {
             <p>Foundations period</p>
             <p>Sports Culture</p>
             <p>Project Phase</p>
-            <p className="bottomLine"><p></p></p>
         </div>
         <div className="images">
             <div className="image">

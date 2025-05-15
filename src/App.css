@@ -10,7 +10,11 @@ html {
 
 body {
   font-family:
-    "Inter",
+    "popins";
+  background-color: #f8f7fd;
+  color: #2d2d2d;
+  width: 100%;
+    font-family: "Inter",
     -apple-system,
     BlinkMacSystemFont,
     sans-serif;
@@ -108,6 +112,7 @@ body {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .welcome-banner {

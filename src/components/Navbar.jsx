@@ -1,21 +1,28 @@
-import logo from '../images/logo-smait.png';
-import '../style/navbar.css';
-import Header from './responsiveness/Header';
+import SearchIcon from "@mui/icons-material/Search";
+import Header from '../components/responsiveness/Header'
 
 const Navbar = () => {
+  const currentDate = new Date();
+
+  const formattedDate3 = currentDate.toLocaleDateString("en-US", {
+    weekday: "short",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
     <>
-         {/* Top Nav */}
-{/* 
-      <header className="navbar">
-        <div className="logo"> <img src= {logo} alt="" /> <p>STUDENTSYNC</p></div>
-        <nav className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Add Student</a>
-          <a href="#" className="active">All Students</a>
-        </nav>
-      </header> */}
-
+      {/* <nav>
+        <div className="welcome">
+          <h4>Welcome</h4>
+          <p>{formattedDate3} </p>
+        </div>
+        <div className="search">
+          <SearchIcon className="Search-icon" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </nav> */}
       <Header />
     </>
   );

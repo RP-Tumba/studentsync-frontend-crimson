@@ -94,9 +94,6 @@ export const HomePage = () => {
           <p>Foundations period</p>
           <p>Sports Culture</p>
           <p>Project Phase</p>
-          <p className="bottomLine">
-            <p></p>
-          </p>
         </div>
         <div className="images">
           <div className="image">

@@ -1,0 +1,40 @@
+/* File: src/components/BannerSection.css */
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #2a3e4c, #5f8ca3);
+  color: white;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  max-width: 50%;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner-btn {
+  background-color: #ffc107;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}

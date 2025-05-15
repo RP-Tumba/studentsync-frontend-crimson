@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import useStudentStore from "../store/studentStore";
 import UpdateDiv from "../pages/UpdateDiv"; // Import UpdateDiv to display the form
 import { Link } from "react-router-dom";
+import "../style/StudentPage.css";
+import "../index.css";
 
 const StudentList = () => {
   const {
@@ -19,7 +21,7 @@ const StudentList = () => {
 
   useEffect(() => {
     fetchStudents();
-  }, []);
+  }, [isEditing]);
 
   const handleDelete = async (id) => {
     const confirm = window.confirm(

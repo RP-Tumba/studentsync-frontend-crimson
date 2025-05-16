@@ -1,11 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import useStudentStore from "../store/studentStore";
 import UpdateDiv from "../pages/UpdateDiv"; // Import UpdateDiv to display the form
 import { Link } from "react-router-dom";
 import "../style/StudentPage.css";
 import "../index.css";
+import { Context } from "../App";
+import DeleteIcon from '@mui/icons-material/Delete';
+import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
+import VisionSection from "../components/responsiveness/VisionSection";
+import GallerySection from "../components/responsiveness/GallerySection";
+import BannerSection from "../components/responsiveness/BannerSection"
+
 
 const StudentList = () => {
+
+  let {displayAddStudent,setDisplayAddStudent} = useContext(Context)
+
   const { students, fetchStudents,deleteStudent, loading,updateStudent, error } = useStudentStore();
 
   const [search, setSearch] = useState("");
@@ -51,7 +61,9 @@ const StudentList = () => {
         <main className="main-content">
           <div className="header-section">
             <h1>All students</h1>
-           <Link to = "/newStudent"> <button className="add-button">+ Add student</button></Link>
+           {/* <Link to = "/newStudent"> <button className="add-button" onClick={()=>setDisplayAddStudent(!displayAddStudent)}>+ Add student</button></Link> */}
+           <button className="add-button" onClick={()=>{
+            setDisplayAddStudent(!displayAddStudent);console.log(displayAddStudent)}}>+ Add student</button>
           </div>
 
           <input
@@ -92,7 +104,7 @@ const StudentList = () => {
                         className="delete-button"
                         onClick={() => handleDelete(user.studentId)}
                       >
-                        Delete
+                        <DeleteIcon />
                       </button>
                       <Link to={`/UpdateDiv/${user.id}/details`}>
                         {" "}
@@ -103,7 +115,7 @@ const StudentList = () => {
                             setSelectedStudent(user); // Set the student to edit
                           }}
                         >
-                          Edit
+                          <DriveFileRenameOutlineIcon />
                         </button>
                       </Link>
                     </td>
@@ -133,6 +145,11 @@ const StudentList = () => {
           onCancel={handleCancelEdit} // Pass cancel function
         />
       )}
+      <br />
+      <VisionSection />
+      <GallerySection />
+      <BannerSection />
+
     </>
   );
 };

@@ -10,9 +10,15 @@ import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import SnoozeRoundedIcon from "@mui/icons-material/SnoozeRounded";
 import DirectionsRunRoundedIcon from "@mui/icons-material/DirectionsRunRounded";
 import { Link } from "react-router-dom";
+import PracticeSkillsSection from '../../components/responsiveness/PracticeSkillsSection'
+import { useContext } from "react";
+import { Context } from "../../App";
+
 
 export const HomePage = () => {
-  return (
+
+
+  return (<>
     <div className="home">
       <div className="topDiv">
         <div className="left">
@@ -113,5 +119,7 @@ export const HomePage = () => {
         </div>
       </div>
     </div>
+    <PracticeSkillsSection />
+    </>
   );
 };

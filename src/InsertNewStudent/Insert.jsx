@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { studentService } from "../lib/api";
 import "./Insert.css";
-import akalogo from "../assets/akalogo.png";
+import akalogo from '../images/logo-smait.png';
+import { Context } from "../App";
 export const Form = () => {
+
+  let {displayAddStudent,setDisplayAddStudent} = useContext(Context)
   const [student, setStudent] = useState({
     first_name: "",
     last_name: "",
@@ -42,10 +45,20 @@ export const Form = () => {
       console.error(`This is error`, error);
     }
   };
+  console.log("displaying displayStudent")
+  console.log(displayAddStudent)
+
+  const handleRemoveForm = () =>{
+    setDisplayAddStudent(!displayAddStudent)
+  }
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <div className={displayAddStudent?"addStudents": "removeStudents"}>
+        
+      <form onSubmit={handleSubmit}  >
+      {/* <button className="add-button" onClick={()=>{
+            setDisplayAddStudent(!displayAddStudent);console.log(displayAddStudent)}}>+ Add student</button> */}
         <div className="newStudentForm">
           <div className="logotitle">
             <div className="photh3">
@@ -137,13 +150,11 @@ export const Form = () => {
             </div>
             <br />
             <div className="allbut">
-              <button type="submit" className="but1">
-                {" "}
+              <button type="submit" onClick={handleRemoveForm} className="but1">
                 Add
               </button>
               &nbsp;&nbsp;&nbsp;
-              <button type="reset" className="but2">
-                {" "}
+              <button type="reset" onClick={handleRemoveForm} className="but2">
                 cancel
               </button>
             </div>
@@ -151,6 +162,7 @@ export const Form = () => {
           {mesg && <p>{mesg}</p>}
         </div>
       </form>
+      </div>
     </>
   );
 };

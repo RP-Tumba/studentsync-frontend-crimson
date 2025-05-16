@@ -3,6 +3,8 @@
     justify-content: space-around;
     width: 98%;
     padding: 4% 7%;
+    display: flex;
+    gap: 20px;
 }
 
 .home .topDiv img{
@@ -13,6 +15,7 @@
 .home .topDiv .left{
     width: 60%;
     margin-top: 30px;
+   
 }
 .home .topDiv .imagesDiv{
     width: 40%;
@@ -34,6 +37,8 @@
 }
 .home .topDiv .left {
     line-height: 1cm;
+    
+    
 }
 
 .home .topDiv .left h4{
@@ -56,10 +61,13 @@
 .home .topDiv .left .buttons{
     display: flex;
     justify-content: space-between;
-    width: 33%;
+    width: 43%;
+    gap: 20px;
+    height: 20%;
 }
 .home .topDiv .left .buttons button{
     font-size: 13px;
+    
 }
 .home .topDiv .left .buttons button:first-child{
     background-color: transparent;
@@ -71,6 +79,9 @@
     background-color: rgb(95, 173, 5);
     color: white;
     text-transform: capitalize;
+    height: 55px;
+    width: 140%;
+    
 
 }
 

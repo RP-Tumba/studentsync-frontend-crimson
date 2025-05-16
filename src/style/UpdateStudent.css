@@ -36,8 +36,8 @@
   border-radius: 50%;
 }
 .email {
-  opacity: 0.6;
-  font-size: 10px;
+ margin-bottom: 10px;
+  font-size: 20px;
 }
 .avatar {
   position: relative;
@@ -50,9 +50,13 @@
 label {
   margin-bottom: 10px;
 }
+
+.Form{
+  margin-top: 100px;
+}
 .Form input {
   background: rgba(242, 244, 246, 0.87);
-  width: 500px;
+  width: 400px;
   height: 25px;
   border: none;
   border-radius: 2px;
@@ -123,14 +127,13 @@ input::placeholder {
   font-family: enter;
 }
 
-.Profilecircle {
+/* .Profilecircle {
   width: 700px;
   height: 700px;
   color: rgb(217, 209, 209);
-}
+} */
 
 .Camera {
-  position: relative;
   right: 10px;
   color: rgba(131, 199, 39, 0.77);
 }

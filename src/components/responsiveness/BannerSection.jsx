@@ -1,5 +1,6 @@
 import React from "react";
 import "./BannerSection.css";
+import youngwoman from '../../images/young-woma.jpg';
 
 const BannerSection = () => {
   return (
@@ -18,7 +19,7 @@ const BannerSection = () => {
         <button className="banner-btn">Get Started</button>
       </div>
       <div className="banner-image">
-        <img src="/images/woman-desk.png" alt="Woman at desk" />
+        <img src={youngwoman} alt="Woman at desk" />
       </div>
     </section>
   );

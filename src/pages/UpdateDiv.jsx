@@ -72,11 +72,7 @@ const UpdateDiv = () => {
                 <img className="image" src={man} />
                 <FlipCameraIosIcon className="Camera" />
               </div>
-              <div>
-                <p>
-                  {" "}
-                  <b> Student Name</b>
-                </p>
+              <div className="students-profile-name">
                 <p className="email">{student.email}</p>
               </div>
             </div>

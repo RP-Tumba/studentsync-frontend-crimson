@@ -95,7 +95,7 @@ export const HomePage = () => {
       <div className="bottomPart">
         <div className="head">
             <p>Gallery</p>
-            <h3>The Gym College Student Lifestyle</h3>
+            <h3> Student Lifestyle</h3>
         </div>
         <div className="nav">
             <p>all </p>
@@ -106,15 +106,15 @@ export const HomePage = () => {
         <div className="images">
             <div className="image">
                 <img src={image5} alt="" />
-                <p>lorem ipsum</p>
+                <p>more info</p>
             </div>
             <div className="image">
                 <img src={image6} alt="" />
-                <p>lorem ipsum</p>
+                <p>more info</p>
             </div>
             <div className="image">
                 <img src={image7} alt="" />
-                <p>lorem ipsum</p>
+                <p>more info</p>
             </div>
         </div>
       </div>

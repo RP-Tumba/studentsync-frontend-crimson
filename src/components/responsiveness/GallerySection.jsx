@@ -7,7 +7,7 @@ import trainer from "../../images/trainer.jpg";
 const GallerySection = () => {
   return (
     <section className="gallery-section">
-      <h2> College Students Lifestyle</h2>
+      <h2>  Students Lifestyle</h2>
       <div className="gallery-grid">
         <img src={student123} alt="Gallery 1" />
         <img src={trainer} alt="Gallery 2" />

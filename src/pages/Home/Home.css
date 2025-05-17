@@ -189,6 +189,7 @@
     margin-top: 2em;
     padding: 3em 7%;
     grid-template-columns: repeat(3,1fr);
+    
 
 }
 .home .bottomPart .images .image{
@@ -224,6 +225,9 @@
     padding-left: 6%;
     padding-top: 3vh;
     z-index: 1;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
 }
 footer{
     padding: 5% 10%;

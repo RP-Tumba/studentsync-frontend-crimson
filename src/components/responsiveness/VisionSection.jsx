@@ -4,7 +4,7 @@ import "./VisionSection.css";
 const VisionSection = () => {
   return (
     <section className="vision-section">
-      <h2>Kepler College Students Management</h2>
+      <h2> Habits of Successful Students</h2>
       <div className="vision-cards">
         <div className="card">
           <h3>Digital Transformation</h3>

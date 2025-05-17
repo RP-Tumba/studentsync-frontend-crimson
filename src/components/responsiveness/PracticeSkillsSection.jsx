@@ -12,7 +12,7 @@ const skills = [
 const PracticeSkillsSection = () => {
   return (
     <section className="practice">
-      <h5>Tumba management students</h5>
+      <h5> management students</h5>
       <h2>GAIN SKILLS WITH PRACTICE</h2>
       <p className="description">
         Tumba is an on-demand learning environment that teaches technical skills

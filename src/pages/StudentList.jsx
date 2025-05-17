@@ -10,6 +10,7 @@ import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutli
 import VisionSection from "../components/responsiveness/VisionSection";
 import GallerySection from "../components/responsiveness/GallerySection";
 import BannerSection from "../components/responsiveness/BannerSection"
+import student4 from '../images/student4.jpg'
 
 
 const StudentList = () => {
@@ -94,6 +95,7 @@ const StudentList = () => {
                 .map((user) => (
                   <tr key={user.id}>
                     <td className="student-name">
+                      <img src={student4}  />
                       {user.firstName || user.id}
                     </td>
                     <td>{user.studentId || "—"}</td>

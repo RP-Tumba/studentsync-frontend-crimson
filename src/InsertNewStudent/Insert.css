@@ -15,7 +15,7 @@ form {
   justify-content: center;
   margin-top: 2rem;
 }
-
+/* 
 .newStudentForm {
   width: 100%;
   max-width: 550px;
@@ -23,7 +23,17 @@ form {
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+} */
+ .newStudentForm {
+  width: 100%;
+  max-width: 550px;
+  height: 95vh;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
+
 
 .logotitle {
   background-color: #d4ee86;
@@ -170,17 +180,25 @@ form input {
   display: block;
   transition: 1s ease;
   position: fixed;
-  top: 0;
+  top: 0px;
   height: 100vh;
-  /* overflow-y: scroll; */
+  overflow-y: hidden;
   z-index: 1001;
   left: 0 !important;
 
 }
+
 .removeStudents{
-  width: 100%;
-  height: 0vh;
-  position: fixed;
-  /* margin-left: 20%; */
+  width: 0%;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
   transition: 1s ease;
+  position: fixed;
+  top: 0;
+  height: 0vh;
+  overflow-y: hidden;
+  z-index: 1001;
+  left: 0 !important;
 }
+

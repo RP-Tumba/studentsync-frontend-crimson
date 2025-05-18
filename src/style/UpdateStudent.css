@@ -1,139 +1,153 @@
-.Container-edit {
-  position: relative;
-  width: 1200px;
-  height: 510px;
-  top: 0px;
-  left: 10px;
-  border-radius: 21px;
-  background: #fff;
-}
-.green {
-  width: 1200px;
-  height: 51px;
-  background: linear-gradient(
-    90deg,
-    rgba(131, 199, 39, 0.77) 0%,
-    rgba(170, 255, 56, 0.32) 100%
-  );
+.box-update-green{
+  height: 50px;
+  width: 100%;
+  background: rgba(131, 199, 39, 0.77);
   border-top-left-radius: 21px;
   border-top-right-radius: 21px;
 }
+.update-profile-account{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.update-profile-account .FlipCameraIosIcon{
+  background: rgb(228, 231, 228);
+  color: green;
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: -35px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.update-profile-account img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  
+  
+}
+.Container-edit {
+  width: 100%;
+  /* height: 700px; */
+  border-radius: 21px;
+  box-shadow: 0px 4px 6px rgb(0, 0, 0.1);
+}
+.details{
+  
+  justify-content: end;
+  text-align: end;
+  
+}
 .edit-btn {
   width: 100px;
-  height: 30px;
-  position: relative;
-  left: 1050px;
-  top: -60px;
+  height: 40px;
   border-radius: 4px;
   background: rgba(131, 199, 39, 0.77);
   color: white;
   text-align: center;
 }
 
-.image {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-.email {
- margin-bottom: 10px;
-  font-size: 20px;
-}
-.avatar {
-  position: relative;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  left: 20px;
-  top: 20px;
-}
+
+
 label {
   margin-bottom: 10px;
 }
 
-.Form{
-  margin-top: 100px;
-}
+
 .Form input {
   background: rgba(242, 244, 246, 0.87);
   width: 400px;
-  height: 25px;
+  height: 45px;
   border: none;
   border-radius: 2px;
   outline: none;
-  justify-content: center;
-  padding: 15px;
 }
-.Form input::placeholder {
-  font-weight: 200;
-  position: absolute;
-}
+
 .allInput {
-  position: relative;
-  width: 100%;
-
-  display: flex;
-  gap: 100px;
-  justify-content: center;
+display: flex;
+ gap: 20px;
+ margin-top: 30px;
 }
+.detail-update-emails{
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 11%;
+}
+.detail-update-emails h1{
+  font-size: 20px;
+  justify-content: start;
 
-.lastButton {
-  background: #f4f3f3;
-  color: rgba(131, 199, 39, 0.77);
+}
+.detail-update-emails .detail-update-email-icon{
   display: flex;
   gap: 10px;
-  position: relative;
-  text-align: center;
-  width: 150px;
-  top: 30px;
-  left: 20px;
 }
-
-.EmailCloro {
-  width: 40px;
-  height: 20px;
-  color: rgba(131, 199, 39, 0.77);
-  position: relative;
-  top: 10px;
-  left: 2px;
-}
-
-.ovalEmail {
+.detail-update-emails .detail-update-email-icon .em-icon{
+  background: rgb(228, 231, 228);
+  color: green;
   height: 50px;
   width: 50px;
-  background: #f4f3f3;
-  padding-inline: 10px;
+  padding: 10px;
   border-radius: 50%;
-}
 
-.lastItems {
-  position: relative;
-  left: 30px;
 }
-.search {
-  display: flex;
+.detail-update-emails .detail-update-email-icon p{
+  padding: 10px;
 }
-.Search-icon {
-  position: relative;
-  left: 27px;
-  top: 2px;
-  opacity: 0.4;
+.update-go-back{
+  height: 50px;
+  width: 150px;
+  margin-top: 50px;
+   background: rgba(242, 244, 246, 0.87);
+   color: green;
+   display: flex;
+   gap: 10px;
 }
+@media screen and  (max-width:390px) {
 
-input::placeholder {
-  font-weight: none;
-  opacity: 0.5;
-  color: rgb(45, 67, 54);
-  font-family: enter;
+ .Container-edit {
+  width: 100%;
+  border-radius: 21px;
+  box-shadow: 0px 4px 6px rgb(0, 0, 0.1);
 }
-
-/* .Profilecircle {
-  width: 700px;
-  height: 700px;
-  color: rgb(217, 209, 209);
-} */
-
-.Camera {
-  right: 10px;
-  color: rgba(131, 199, 39, 0.77);
+.allInput {
+display: grid;
+ gap: 20px;
+ margin-top: 30px;
+}
+.Form input {
+  background: rgba(242, 244, 246, 0.87);
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+.details{
+  
+  justify-content: center;
+  text-align: center;
+  
+}
+.detail-update-emails{
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 1%;
+  justify-content: center;
+  text-align: center;
+} 
+.detail-update-emails h1{
+  width: 300px;
+ 
+}
+.detail-update-email-icon{
+   margin-left: 60px;
+}
+.update-go-back{
+  margin-left: 80px;
+  padding-bottom: 10px;
+  
+}
 }

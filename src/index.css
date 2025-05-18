@@ -35,7 +35,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: poppins;
-  background: white;
+  background: white !important;
 }
 
 h1 {

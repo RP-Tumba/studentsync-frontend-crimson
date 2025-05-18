@@ -27,7 +27,6 @@ export const Form = () => {
     try {
       const insert = await studentService.createStudent(student);
       if (insert.success) {
-        setMessage(insert.message);
         setStudent({
           first_name: "",
           last_name: "",
@@ -37,11 +36,13 @@ export const Form = () => {
           contact_number: "",
           enrollment_date: "",
         });
+        alert(insert.message);
+        setDisplayAddStudent(!displayAddStudent)
       } else {
-        setMessage(insert.message);
+        alert(insert.message);
       }
     } catch (error) {
-      setMessage(`Something went wrong while inserting student `);
+      alert(`Something went wrong while inserting student `);
       console.error(`This is error`, error);
     }
   };
@@ -150,7 +151,7 @@ export const Form = () => {
             </div>
             <br />
             <div className="allbut">
-              <button type="submit" onClick={handleRemoveForm} className="but1">
+              <button type="submit" className="but1">
                 Add
               </button>
               &nbsp;&nbsp;&nbsp;
@@ -159,7 +160,7 @@ export const Form = () => {
               </button>
             </div>
           </div>
-          {mesg && <p>{mesg}</p>}
+          {/* {mesg && <p>{mesg}</p>} */}
         </div>
       </form>
       </div>

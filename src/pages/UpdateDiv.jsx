@@ -59,69 +59,65 @@ const UpdateDiv = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // onUpdate(updatedData); // Pass the updated data to the parent
-    await studentService.updateStudent(id, updatedData);
+    await studentService.updateStudent(id, updatedData).then(res=>alert(res.message)).catch(err=>alert(err.message));
   };
 
   return (
     <>
+     
       <div className="Container-edit">
+        <div className="box-update-green"></div>
+        <center> <div className="update-profile-account"><img src={man}  /><FlipCameraIosIcon className="FlipCameraIosIcon" /></div></center>
         <form onSubmit={handleSubmit}>
-          <div className="Details">
-            <div className="avatar">
-              <div>
-                <img className="image" src={man} />
-                <FlipCameraIosIcon className="Camera" />
-              </div>
-              <div className="students-profile-name">
-                <p className="email">{student.email}</p>
-              </div>
-            </div>
-
-            <div>
-              <button className="edit-btn" type="submit">
-                Edit
-              </button>
-            </div>
-          </div>
+        
           <div className="Form">
-            <div className="allInput">
-              <div className="right">
-                <label>First Name</label> <br />
-                <input
-                  type="text"
-                  name="firstName"
-                  value={updatedData.firstName}
-                  onChange={handleChange}
-                  placeholder="  First Name"
-                />
-                <br />
-                <label>Student id</label>
-                <br />
-                <input
-                  type="text"
-                  value={updatedData.studentId}
-                  onChange={handleChange}
-                  placeholder="   Student id"
-                />
-                <br />
-                <label>Date of Birth</label> <br />
-                <input
-                  type="date"
-                  value={updatedData.dateOfBirth}
-                  onChange={handleChange}
-                  placeholder="   Date of birth"
-                />
-                <br />
-                <label>Enrollment Date</label>
-                <br />
-                <input
-                  type="date"
-                  name="enrollmentDate"
-                  value={updatedData.enrollmentDate}
-                  onChange={handleChange}
-                  placeholder="   Enrollment Date"
-                />
+            <div className="details">
+                  <button className="edit-btn" type="submit">
+                    Edit
+                   </button>
+          
+
               </div>
+            <div className="allInput">
+
+                     <div className="right">
+                              <label>First Name</label> <br />
+                              <input
+                                type="text"
+                                name="firstName"
+                                value={updatedData.firstName}
+                                onChange={handleChange}
+                                placeholder="  First Name" />
+                                             
+                                <br />
+                                <label>Student id</label>
+                                <br />
+                                <input
+                                type="text"
+                                value={updatedData.studentId}
+                                onChange={handleChange}
+                                placeholder="   Student id" />
+                
+                                 <br />
+                                 <label>Date of Birth</label> <br />
+
+                                <input
+                                type="date"
+                                value={updatedData.dateOfBirth}
+                                onChange={handleChange}
+                                placeholder="   Date of birth"  />
+               
+                                 <br />
+                                 <label>Enrollment Date</label>
+                                 <br />
+                                 <input
+                                 type="date"
+                                 name="enrollmentDate"
+                                 value={updatedData.enrollmentDate}
+                                 onChange={handleChange}
+                                 placeholder="   Enrollment Date" />
+                
+                       </div>
 
               <div className="left">
                 <label>Last Name</label> <br />
@@ -152,26 +148,26 @@ const UpdateDiv = () => {
                 />
               </div>
             </div>
+                    {/* all the button details information */}
+             
+  
+         
           </div>
-
-          <div className="lastItems">
-            <div className="avatar">
-              <div className="ovalEmail">
-                <EmailIcon className="EmailCloro" />
-              </div>
-              <div>
-                <p>
-                  <b> {student.email}</b>
-                </p>
-                <p className="#">1 month ago</p>
-              </div>
+          
+         </form>
+         <div className="detail-update-emails">
+            <h1>My email address</h1> <br />
+              <div className="detail-update-email-icon">
+              <EmailIcon className="em-icon" />
+                <p>{updatedData.email}</p>
+                
+              
+                 </div>
+                 <button className="update-go-back"><ArrowBackIcon className="arrow" />go back</button> <br />
             </div>
-            <button className="lastButton">
-              <ArrowBackIcon /> Go back
-            </button>
           </div>
-        </form>
-      </div>
+      
+      
     </>
   );
 };

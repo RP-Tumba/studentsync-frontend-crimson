@@ -13,7 +13,7 @@ const GallerySection = () => {
         <img src={trainer} alt="Gallery 2" />
         <img src={students12} alt="Gallery 3" />
       </div>
-    </section>
+    </section>  
   );
 };
 

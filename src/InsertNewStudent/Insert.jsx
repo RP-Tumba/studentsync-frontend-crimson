@@ -17,6 +17,14 @@ export const Form = () => {
   });
   const [mesg, setMessage] = useState("");
 
+  const time = new Date()
+
+  const todayDate = `${time.getFullYear()}-${
+    time.getMonth()<10?`0${time.getMonth()}`:time.getMonth()
+  }-${
+    time.getDate()<10?`0${time.getDate()}`:time.getDate()
+  }`
+
   const handleInput = (e) => {
     setStudent({ ...student, [e.target.name]: e.target.value });
   };
@@ -98,6 +106,7 @@ export const Form = () => {
                 <input
                   type="date"
                   name="date_of_birth"
+                  max={todayDate}
                   value={student.date_of_birth}
                   onChange={handleInput}
                   required
@@ -120,6 +129,7 @@ export const Form = () => {
                 <input
                   type="email"
                   name="email"
+                  max={todayDate}
                   value={student.email}
                   onChange={handleInput}
                   required

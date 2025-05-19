@@ -22,6 +22,14 @@ const UpdateDiv = () => {
   }, [id]);
   console.log(id);
 
+const time = new Date()
+
+  const todayDate = `${time.getFullYear()}-${
+    time.getMonth()<10?`0${time.getMonth()}`:time.getMonth()
+  }-${
+    time.getDate()<10?`0${time.getDate()}`:time.getDate()
+  }`
+
   const [updatedData, setUpdatedData] = useState({
     firstName: student?.firstName || "",
     lastName: student?.lastName || "",
@@ -103,6 +111,7 @@ const UpdateDiv = () => {
 
                                 <input
                                 type="date"
+                                max={todayDate}
                                 value={updatedData.dateOfBirth}
                                 onChange={handleChange}
                                 placeholder="   Date of birth"  />
@@ -113,6 +122,7 @@ const UpdateDiv = () => {
                                  <input
                                  type="date"
                                  name="enrollmentDate"
+                                 max={todayDate}
                                  value={updatedData.enrollmentDate}
                                  onChange={handleChange}
                                  placeholder="   Enrollment Date" />

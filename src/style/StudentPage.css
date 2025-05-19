@@ -181,3 +181,58 @@ body, html {
   font-size: 18px;
   margin-top: 10px;
 } 
+@media screen and  (max-width:390px){
+ .page-wrapper{
+ margin-top: 20px;
+ position: relative;
+
+}
+.main-content {
+  padding: 12px;
+  background: white;
+  margin: 14px;
+  border-radius: 8px;
+  
+}
+.header-section {
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-top: -20px;
+}
+.add-button{
+margin-left: 10%;
+}
+.search-input {
+  width: 300px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-left: 33%;
+  margin-top: 50px;
+
+}
+.student-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.student-table tr {
+  border-bottom: 1px solid #e0e0e0;
+
+}
+.student-table td{
+  padding: 5px !important;
+  border: none !important;
+  
+}
+.student-name {
+  display: grid;
+  align-items: center;
+  
+}
+}

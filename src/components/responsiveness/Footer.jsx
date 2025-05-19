@@ -40,6 +40,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      <br />
     </footer>
   );
 };
